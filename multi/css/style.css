@@ -1,0 +1,296 @@
+@font-face {
+    font-family: font1;
+    src: url(KaushanScript-Regular.otf);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: auto;
+    position: relative;
+    margin: 20px;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+* {
+    outline: none;
+    padding: 0;
+    margin: 0px;
+}
+
+
+
+header{
+    margin: 20px;
+}
+body{
+    margin: 0 auto;
+    background: #f5f5f5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+.navbar{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+nav ul{
+    margin: 0;
+    margin-right: 0px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    left: 700px;
+    top: 50px;
+    position: absolute;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+nav ul li a{
+    display: block;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+nav ul li:hover ul{
+    display: block;
+    left: 0px;
+    top: 20px;
+}
+nav ul li ul li{
+    width: 250px;
+}
+nav ul li ul li a{
+    padding: 20px 50px;
+}
+nav ul li ul li a:hover{
+    background-color: rgba(217, 217, 217, 0.7);
+}
+nav a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: #000000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 150ms;
+}
+h1.head{
+    text-align: center  ;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: normal;
+}
+p{
+    margin: 20px 150px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    text-align: left;
+    font-weight: normal;
+}
+
+ #menu{
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right:60px;
+    font-size : 20px;
+    height: 100px;
+     text-transform: uppercase;
+
+ }
+ #downT{
+    top : 50px;
+ }
+
+/* FOOTER */
+footer {
+    background-color: #080808;
+    padding: 60px;
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .col-1-3 .copyright {
+        text-align: center;
+    }
+    footer .col-1-3 .portgasthemes {
+        text-align: center;
+    }
+    footer .social-icos {
+        margin: 10px 0;
+    }
+}
+
+footer p {
+    color: #a7a7a7;
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+footer .copyright {
+    text-align: left;
+}
+
+footer .portgasthemes {
+    text-align: right;
+}
+
+footer .portgasthemes i {
+    color: #e67272;
+}
+
+footer .portgasthemes a {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+footer .portgasthemes a:hover {
+    color: #e67272;
+}
+
+footer .social-icos a {
+    color: #a7a7a7;
+    font-size: 16px;
+}
+#logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.homefont{
+    margin: 20px;
+    margin-bottom: 50px;
+    background-color: #FFFFFF;
+}
+.video{
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+
+}

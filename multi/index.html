@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>laka</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/api.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <img src="img/logo.png" alt="logo" class="logo" style="padding-left: 15px">
+        <nav>
+            <ul>
+                <li><a href="index.html" id="menu">Home</a></li>
+                <li id="menu">Travel
+                    <ul id="downT">
+                        <li><a href="#">Temple</a></li>
+                        <li><a href="#">Hill</a></li>
+                        <li><a href="#">Museum</a></li>
+                        <li><a href="#">National Park</a></li>
+                    </ul>
+                </li>
+                <li id="menu">Transport
+                    <ul id="downT">
+                        <li><a href="https://www.thairailwayticket.com/eTSRT/">Train</a></li>
+                        <li><a href="https://www.expedia.co.th/Flights">Airplane</a></li>
+                        <li><a href="#">Bus</a></li>
+                    </ul>
+                </li>
+                <li><a href="article.html" id="menu">Article</a></li>
+                <li><a href="#" id="menu">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/17.jpg" style="width:100%; height: 500px;opacity : 1">
+        <div class="text"> </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/18.jpg" style="width:100%; height: 500px;opacity : 1">
+        <div class="text"> </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/19.jpg" style="width:100%; height: 500px;opacity : 1">
+        <div class="text"> </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/21.jpg" style="width:100%; height: 500px;opacity : 1">
+        <div class="text"> </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/27.jpg" style="width:100%; height: 500px;opacity : 1">
+        <div class="text"> </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<div class="top-categories">
+    <div class="text-categories">Categories</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1-5">
+                <div class="top-cat-single">
+                    <img src="imgtop/top1.jpg" alt="top categorie">
+                    <a href="#" class="top-cat-title">Travel</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="top-cat-single">
+                    <img src="imgtop/top2.jpg" alt="top categorie">
+                    <a href="#" class="top-cat-title">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="top-cat-single">
+                    <img src="imgtop/top3.jpg" alt="top categorie">
+                    <a href="#" class="top-cat-title">Recipes</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="top-cat-single">
+                    <img src="imgtop/top4.jpg" alt="top categorie">
+                    <a href="#" class="top-cat-title">Fashion</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="top-cat-single">
+                    <img src="imgtop/top5.jpg" alt="top categorie">
+                    <a href="#" class="top-cat-title">girjgir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="homefont">
+    <br>
+    <h1 class="head">Nan History<br></h1>
+<img src="img/07.jpg" width="650" align="left" style="margin-left: 150px; margin-right: 40px; margin-top: 20px; margin-bottom: 20px"/>
+<p>Little-known Nan goes back to the depths of the history of Thailand. For centuries it was a separate, autonomous kingdom with few relationships with the outside world.
+    There is much evidence of prehistoric habitation, but it wasn't until several small mueang united to form Nanthaburi on the Nan River in the mid-14th century, contemporaneously with the creation of Luang Prabang and the Lan Xang (Million Elephants) kingdom in Laos, that the city became a power to be taken into account. Associated with the mighty Sukhothai kingdom, the mueang took the title Wara Nakhon and played a significant part in the development of early Thai nationalism.
+    By the end of the 14th century Nan was one of the nine northern Thai-Lao principalities that comprised Lan Na Thai (now Lanna) and the city state flourished throughout the 15th century under the name Chiang Klang ("Middle City"), a reference to its position roughly midway between Chiang Mai ("New City") and Chiang Thong (Golden City, which is today's Luang Prabang).
+    The Burmese took control of the kingdom in 1558 and deported many of the inhabitants to Burma as slaves; the city was completely deserted until northern Thailand was retaken from the Burmese in 1786. The local dynasty then regained local sovereignty and it remained semi-autonomous until 1931 when Nan finally accepted full Bangkok dominion. Part of its territory had been annexed to Laos by the French in the late-19th century.
+    Parts of the old city wall and several early wats dating from the Lanna period can be seen in contemporary Nan. The city's wats are distinctive; some temple structures show Lanna influence, while others belong to the Thai Lue legacy brought from Xishuangbanna in China, where the Thai Lue people originated.</p>
+<br>
+<h1 class="head">Unseen Nan<br></h1>
+<video class="video" controls>
+    <source src="unseen%20nan.mp4" type="video/mp4">
+</video>
+<p>
+    Of all of Thailand’s temples, this has been described as a must-see with some even going as far as saying that it is Thailand’s equivalent to the Sistine Chapel due to the centuries-old frescoes inside the temple walls. Indeed, the artistic details were quite stunning and depicted various slices of life back in the day.
+    The most famous is the depiction of a man whispering to a smiling woman, a Thai Lue courtship scene from the 19th century.
+    Apart from the murals, the temple itself is quite unique. The building is box-shaped instead of rectangular like all other Thai temples I had been to.
+    And instead of placing the main Buddha image at the far end, Wat Phumin has the Buddha images at the center and there’s not one but four of them!
+</p>
+    <br>
+    <br>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-1-3">
+                <p class="copyright">© 2018 Nan</p>
+            </div>
+            <div class="col-1-3">
+                <div class="social-icos">
+                    <a href="#"><i class="ion-social-facebook"></i></a>
+                    <a href="#"><i class="ion-social-twitter"></i></a>
+                    <a href="#"><i class="ion-social-googleplus"></i></a>
+                    <a href="#"><i class="ion-social-instagram"></i></a>
+                    <a href="#"><i class="ion-social-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <p class="portgasthemes">Made <i class="ion-ios-heart"></i> by <a href="https://themeforest.net/user/portgasthemes/portfolio">Laka Group</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- FACEBOOK PAGE PLUGIN SCRIPT -->
+<div id="fb-root"></div>
+<!-- END FACEBOOK PAGE PLUGIN SCRIPT -->
+
+<!-- SCRIPTS -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/app.js"></script>
+<!-- END SCRIPTS -->
+</body>
+
+
+</html>
